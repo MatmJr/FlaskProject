@@ -43,25 +43,33 @@ python src\app.py
 
 O aplicativo estará disponível em [http://127.0.0.1:5000/](http://127.0.0.1:5000/).
 
+## Executar o teste
+
+```bash
+pytest --cov=src
+```
+**Desafio:** Atingir 100% de cobertura nos testes.
+
 ## Estrutura do Projeto
 
 ```
 src/
-├── models/
-│   └── employeeModel.py
-├── controllers/
-│   └── employeeController.py
-├── views/
-│   ├── mainpage.html
-│   ├── createpage.html
-│   ├── datalist.html
-│   ├── data.html
-│   ├── update.html
-│   └── delete.html
-├── app.py
-├── employees.db (pode não existir inicialmente)
-├── requirements.txt
-└── README.md
+  ├── models/
+  │   └── employeeModel.py
+  ├── controllers/
+  │   └── employeeController.py
+  ├── views/
+  │   ├── mainpage.html
+  │   ├── createpage.html
+  │   ├── datalist.html
+  │   ├── data.html
+  │   ├── update.html
+  │   └── delete.html
+  ├── app.py
+  ├── test_app.py
+── requirements.txt
+── LICENSE.md
+── README.md
 ```
 
 ## Contribuição
