@@ -1,6 +1,6 @@
 import sqlite3
 
-con = sqlite3.connect('exemplo')
+con = sqlite3.connect("exemplo")
 
 cursor = con.cursor()
 
@@ -18,11 +18,12 @@ cursor = con.cursor()
 
 # con.commit()
 
-cursor.execute('''
-SELECT * FROM usuarios''')
+cursor.execute(
+    """
+SELECT * FROM usuarios"""
+)
 
 registro = cursor.fetchall()
 
 for regis in registro:
     print(regis)
-
